@@ -109,6 +109,8 @@ body {
 .light-section {
   background: var(--card-light);
   color: var(--ink-light);
+  position: relative;
+  z-index: 1;
 }
 
 /* Gradient text */

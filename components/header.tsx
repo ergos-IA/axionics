@@ -9,21 +9,21 @@ export const Header = () => {
 
   return (
     <div className="sticky top-0 z-50 backdrop-blur-[10px] backdrop-saturate-150 bg-gradient-to-b from-[rgba(10,12,15,.8)] to-[rgba(10,12,15,.35)] border-b border-[var(--line)]">
-      <div className="max-w-[1200px] mx-auto px-5 py-3.5 flex items-center gap-6">
+      <div className="max-w-[1200px] mx-auto px-3 sm:px-5 py-2.5 sm:py-3.5 flex items-center gap-2 sm:gap-4 md:gap-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/Logo-Axionics.png"
             alt="Axionics"
             width={560}
             height={128}
-            className="h-20 w-auto brightness-0 invert"
+            className="h-12 sm:h-16 md:h-20 w-auto brightness-0 invert"
             priority
           />
         </Link>
 
         <div className="flex-1" />
 
-        <div className="flex items-center gap-2 border border-[var(--line)] rounded-xl overflow-hidden">
+        <div className="hidden sm:flex items-center gap-2 border border-[var(--line)] rounded-xl overflow-hidden">
           <button
             className={`px-3 py-2 text-sm font-bold transition-colors ${
               lang === 'es' ? 'bg-[#0e1116] text-foreground' : 'bg-transparent text-[var(--muted)]'
@@ -45,8 +45,8 @@ export const Header = () => {
         </div>
 
         <Link href="#contacto">
-          <button className="px-5 py-2.5 bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] text-black font-bold rounded-lg hover:shadow-[0_0_20px_rgba(168,220,255,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
-            Discovery gratuito
+          <button className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 text-xs sm:text-sm md:text-base bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] text-black font-bold rounded-lg hover:shadow-[0_0_20px_rgba(168,220,255,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 whitespace-nowrap">
+            Discovery
           </button>
         </Link>
       </div>
