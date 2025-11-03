@@ -2,6 +2,7 @@
 
 import { Hero } from "@/components/hero";
 import { LogoMarquee } from "@/components/logo-marquee";
+import { Trust } from "@/components/sections/trust";
 import { Valor360 } from "@/components/sections/valor360";
 import { Services } from "@/components/sections/services";
 import { Insights } from "@/components/sections/insights";
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       <Hero />
       <LogoMarquee />
+      <Trust />
       <Valor360 />
       <Services />
       <Insights />

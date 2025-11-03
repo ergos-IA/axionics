@@ -15,7 +15,7 @@ export function Valor360() {
             </div>
             <h3 className="text-xl font-bold mb-3 text-[var(--ink-light)] group-hover:text-[var(--accent)] transition-colors">Crecimiento</h3>
             <p className="text-[var(--muted-light)] text-sm leading-relaxed">
-              Ingresos y share aumentan con procesos optimizados y experiencias mejores.
+              Impulsa ingresos con operaciones optimizadas. Clientes reportan aumentos del 15-25% en eficiencia de ventas y mejora del 20% en NPS.
             </p>
           </div>
           <div className="group bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-[0_4px_24px_rgba(0,0,0,.08)] hover:border-[var(--accent)] hover:shadow-[0_8px_32px_rgba(168,220,255,0.2),0_0_0_1px_rgba(168,220,255,0.1)_inset] transition-all duration-300 hover:-translate-y-1">
@@ -24,7 +24,7 @@ export function Valor360() {
             </div>
             <h3 className="text-xl font-bold mb-3 text-[var(--ink-light)] group-hover:text-[var(--accent)] transition-colors">Operaciones</h3>
             <p className="text-[var(--muted-light)] text-sm leading-relaxed">
-              Coste por transacción, lead time y defectos bajan con automatización.
+              Reduce costes operativos hasta 35%. Automatización RPA + IA disminuye tiempos de ciclo 40-60% y errores humanos en 85%.
             </p>
           </div>
           <div className="group bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-[0_4px_24px_rgba(0,0,0,.08)] hover:border-[var(--accent)] hover:shadow-[0_8px_32px_rgba(168,220,255,0.2),0_0_0_1px_rgba(168,220,255,0.1)_inset] transition-all duration-300 hover:-translate-y-1">
@@ -33,16 +33,16 @@ export function Valor360() {
             </div>
             <h3 className="text-xl font-bold mb-3 text-[var(--ink-light)] group-hover:text-[var(--accent)] transition-colors">Talento</h3>
             <p className="text-[var(--muted-light)] text-sm leading-relaxed">
-              Menos tareas repetitivas, más foco en valor y satisfacción interna.
+              Libera 30% del tiempo de equipos eliminando tareas manuales. Aumenta satisfacción laboral y retención de talento en organizaciones.
             </p>
           </div>
           <div className="group bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-[0_4px_24px_rgba(0,0,0,.08)] hover:border-[var(--accent)] hover:shadow-[0_8px_32px_rgba(168,220,255,0.2),0_0_0_1px_rgba(168,220,255,0.1)_inset] transition-all duration-300 hover:-translate-y-1">
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] flex items-center justify-center mb-4 shadow-lg shadow-[var(--accent)]/20 group-hover:shadow-[var(--accent)]/40 transition-all">
               <span className="text-2xl">🌱</span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-[var(--ink-light)] group-hover:text-[var(--accent)] transition-colors">Impacto</h3>
+            <h3 className="text-xl font-bold mb-3 text-[var(--ink-light)] group-hover:text-[var(--accent)] transition-colors">Sostenibilidad</h3>
             <p className="text-[var(--muted-light)] text-sm leading-relaxed">
-              KPIs ESG e impacto positivo medidos y reportados.
+              Monitoriza KPIs ESG en tiempo real. Reduce huella de carbono operativa 20-30% mediante optimización inteligente de recursos.
             </p>
           </div>
         </div>

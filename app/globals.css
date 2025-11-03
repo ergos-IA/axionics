@@ -36,7 +36,7 @@
 
   --shadow: 0 24px 70px rgba(0,0,0,.55);
   --radius: 18px;
-  --space: 84px;
+  --space: 48px;
 }
 
 @utility container {

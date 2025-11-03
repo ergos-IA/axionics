@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export const Header = () => {
@@ -9,9 +10,15 @@ export const Header = () => {
   return (
     <div className="sticky top-0 z-50 backdrop-blur-[10px] backdrop-saturate-150 bg-gradient-to-b from-[rgba(10,12,15,.8)] to-[rgba(10,12,15,.35)] border-b border-[var(--line)]">
       <div className="max-w-[1200px] mx-auto px-5 py-3.5 flex items-center gap-6">
-        <Link href="/" className="flex items-center gap-2.5 font-extrabold tracking-wide">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] shadow-[0_6px_20px_rgba(159,245,225,.25)]" />
-          AXIONICS
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/Logo-Axionics.png"
+            alt="Axionics"
+            width={560}
+            height={128}
+            className="h-20 w-auto brightness-0 invert"
+            priority
+          />
         </Link>
 
         <div className="flex-1" />

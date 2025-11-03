@@ -6,10 +6,10 @@ import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 
 const slogans = [
-  'Procesos superiores. Resultados medibles.',
-  'Automatiza lo repetitivo. Escala lo valioso.',
-  'Discovery → Automatización → IA con ROI.',
-  'Menos coste. Más velocidad. Clientes felices.'
+  'Reinventa tu negocio con IA aplicada.',
+  'Del caos operativo al crecimiento predecible.',
+  'Automatización inteligente. Resultados medibles.',
+  'Transforma procesos. Acelera decisiones.'
 ];
 
 export function Hero() {
@@ -42,15 +42,15 @@ export function Hero() {
           className={`text-5xl sm:text-6xl md:text-7xl font-black leading-[1.02] mb-4 transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
         >
           {slogans[currentSlogan].split(' ').map((word, i) => {
-            if (word === 'superiores' || word === 'repetitivo.' || word === 'IA' || word === 'velocidad.') {
+            if (word === 'IA' || word === 'predecible.' || word === 'medibles.' || word === 'decisiones.') {
               return <span key={i} className="gradient-text">{word} </span>;
             }
             return <span key={i}>{word} </span>;
           })}
         </h1>
 
-        <p className="font-mono text-base sm:text-lg text-[var(--muted)] max-w-[62ch] mx-auto mb-6">
-          Detectamos fricción, automatizamos lo repetitivo y activamos <strong>IA aplicada</strong> sobre tu negocio. Menos coste, más velocidad y clientes más satisfechos.
+        <p className="font-mono text-base sm:text-lg text-[var(--muted)] max-w-[68ch] mx-auto mb-6">
+          Transformamos operaciones complejas en sistemas inteligentes. Combinamos <strong>process discovery</strong>, automatización robótica y <strong>IA generativa</strong> para entregar resultados medibles en 90 días.
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap mb-4">
