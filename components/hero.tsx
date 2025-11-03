@@ -53,22 +53,22 @@ export function Hero() {
           Detectamos fricción, automatizamos lo repetitivo y activamos <strong>IA aplicada</strong> sobre tu negocio. Menos coste, más velocidad y clientes más satisfechos.
         </p>
 
-        <div className="flex justify-center gap-3 flex-wrap mb-4">
+        <div className="flex justify-center gap-4 flex-wrap mb-4">
           <Link href="#contacto">
             <Button
-              className="rounded-full bg-gradient-to-br from-[rgba(168,220,255,.24)] to-[rgba(159,245,225,.18)] border-transparent shadow-[0_10px_40px_rgba(0,0,0,.35)]"
+              size="lg"
               onMouseEnter={() => setHovering(true)}
               onMouseLeave={() => setHovering(false)}
             >
-              Empezar
+              Empezar →
             </Button>
           </Link>
           <Link href="#servicios">
             <Button
               variant="outline"
-              className="rounded-full border-[var(--line)] bg-[rgba(18,20,26,.62)]"
+              size="lg"
             >
-              Ver cómo
+              Ver cómo funciona
             </Button>
           </Link>
         </div>

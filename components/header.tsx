@@ -37,11 +37,10 @@ export const Header = () => {
           </button>
         </div>
 
-        <Link
-          href="#contacto"
-          className="px-4 py-2.5 border border-[var(--accent)] rounded-xl text-[var(--accent)] font-extrabold hover:bg-gradient-to-br hover:from-[rgba(168,220,255,.16)] hover:to-[rgba(159,245,225,.12)] transition-colors"
-        >
-          Discovery gratuito
+        <Link href="#contacto">
+          <button className="px-5 py-2.5 bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] text-black font-bold rounded-lg hover:shadow-[0_0_20px_rgba(168,220,255,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+            Discovery gratuito
+          </button>
         </Link>
       </div>
     </div>

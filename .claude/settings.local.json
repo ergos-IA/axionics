@@ -4,7 +4,10 @@
       "Bash(Select-Object -ExpandProperty FullName)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(del nul 2)"
+      "Bash(del nul 2)",
+      "Bash(git push:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm dev)"
     ],
     "deny": [],
     "ask": []

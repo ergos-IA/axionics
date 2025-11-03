@@ -6,15 +6,20 @@ import { cn } from "@/lib/utils"
 import { px } from "../utils"
 
 const buttonVariants = cva(
-  "inline-flex relative uppercase border font-mono cursor-pointer items-center font-medium has-[>svg]:px-3 justify-center gap-2 whitespace-nowrap font-medium ease-out transition-all duration-300 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive [clip-path:polygon(var(--poly-roundness)_0,calc(100%_-_var(--poly-roundness))_0,100%_0,100%_calc(100%_-_var(--poly-roundness)),calc(100%_-_var(--poly-roundness))_100%,0_100%,0_calc(100%_-_var(--poly-roundness)),0_var(--poly-roundness))]",
+  "inline-flex relative font-bold cursor-pointer items-center justify-center gap-2 whitespace-nowrap ease-out transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-background",
   {
     variants: {
       variant: {
-        default: "bg-background border-primary text-primary-foreground [&>[data-border]]:bg-primary [box-shadow:inset_0_0_54px_0px_var(--tw-shadow-color)] shadow-[#EBB800] hover:shadow-[#EBB800]/80",
+        default: "bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] text-black hover:shadow-[0_0_30px_rgba(168,220,255,0.5)] hover:scale-[1.02] active:scale-[0.98] border-0",
+        outline: "border-2 border-[var(--accent)] text-[var(--accent)] bg-transparent hover:bg-[var(--accent)]/10 hover:shadow-[0_0_20px_rgba(168,220,255,0.3)] active:scale-[0.98]",
+        secondary: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 hover:border-white/30 active:scale-[0.98]",
+        ghost: "border-0 text-[var(--muted)] hover:text-foreground hover:bg-white/5 active:scale-[0.98]",
       },
       size: {
-        default: "h-16 px-6 text-base",
-        sm: "h-14 px-6 text-sm",
+        default: "h-12 px-6 text-base rounded-xl",
+        sm: "h-10 px-5 text-sm rounded-lg",
+        lg: "h-14 px-8 text-lg rounded-xl",
+        icon: "h-10 w-10 rounded-lg",
       },
     },
     defaultVariants: {
@@ -37,25 +42,13 @@ function Button({
   }) {
   const Comp = asChild ? Slot : "button"
 
-  const polyRoundness = 16
-  const hypotenuse = polyRoundness * 2
-  const hypotenuseHalf = polyRoundness / 2 - 1.5
-
   return (
     <Comp
-      style={{
-        "--poly-roundness": px(polyRoundness),
-      } as React.CSSProperties}
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
-      <span data-border="top-left" style={{ "--h": px(hypotenuse), "--hh": px(hypotenuseHalf) } as React.CSSProperties} className="absolute inline-block w-[var(--h)] top-[var(--hh)] left-[var(--hh)] h-[2px] -rotate-45 origin-top -translate-x-1/2" />
-      <span data-border="bottom-right" style={{ "--h": px(hypotenuse), "--hh": px(hypotenuseHalf) } as React.CSSProperties} className="absolute w-[var(--h)] bottom-[var(--hh)] right-[var(--hh)] h-[2px] -rotate-45 translate-x-1/2" />
-
-      <Slottable>
-        {children}
-      </Slottable>
+      {children}
     </Comp>
   )
 }

@@ -86,11 +86,23 @@ body {
 
 /* Glass effect utilities */
 .glass-card {
-  background: var(--glass);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(15, 18, 22, 0.95) 0%, rgba(10, 12, 15, 0.9) 100%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(168, 220, 255, 0.15);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6),
+              0 0 0 1px rgba(168, 220, 255, 0.05) inset,
+              0 2px 8px rgba(168, 220, 255, 0.1) inset;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(168, 220, 255, 0.3);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7),
+              0 0 0 1px rgba(168, 220, 255, 0.1) inset,
+              0 2px 16px rgba(168, 220, 255, 0.2) inset,
+              0 0 32px rgba(168, 220, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 /* Light section wrapper */
