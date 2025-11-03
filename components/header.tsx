@@ -1,0 +1,49 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+
+export const Header = () => {
+  const [lang, setLang] = useState<'es' | 'en'>('es');
+
+  return (
+    <div className="sticky top-0 z-50 backdrop-blur-[10px] backdrop-saturate-150 bg-gradient-to-b from-[rgba(10,12,15,.8)] to-[rgba(10,12,15,.35)] border-b border-[var(--line)]">
+      <div className="max-w-[1200px] mx-auto px-5 py-3.5 flex items-center gap-6">
+        <Link href="/" className="flex items-center gap-2.5 font-extrabold tracking-wide">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)] shadow-[0_6px_20px_rgba(159,245,225,.25)]" />
+          AXIONICS
+        </Link>
+
+        <div className="flex-1" />
+
+        <div className="flex items-center gap-2 border border-[var(--line)] rounded-xl overflow-hidden">
+          <button
+            className={`px-3 py-2 text-sm font-bold transition-colors ${
+              lang === 'es' ? 'bg-[#0e1116] text-foreground' : 'bg-transparent text-[var(--muted)]'
+            }`}
+            onClick={() => setLang('es')}
+            aria-pressed={lang === 'es'}
+          >
+            ES
+          </button>
+          <button
+            className={`px-3 py-2 text-sm font-bold transition-colors ${
+              lang === 'en' ? 'bg-[#0e1116] text-foreground' : 'bg-transparent text-[var(--muted)]'
+            }`}
+            onClick={() => setLang('en')}
+            aria-pressed={lang === 'en'}
+          >
+            EN
+          </button>
+        </div>
+
+        <Link
+          href="#contacto"
+          className="px-4 py-2.5 border border-[var(--accent)] rounded-xl text-[var(--accent)] font-extrabold hover:bg-gradient-to-br hover:from-[rgba(168,220,255,.16)] hover:to-[rgba(159,245,225,.12)] transition-colors"
+        >
+          Discovery gratuito
+        </Link>
+      </div>
+    </div>
+  );
+};

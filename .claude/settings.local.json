@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(del nul 2)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
